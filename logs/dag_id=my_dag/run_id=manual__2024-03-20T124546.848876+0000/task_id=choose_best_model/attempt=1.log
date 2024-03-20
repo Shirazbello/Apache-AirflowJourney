@@ -1,0 +1,28 @@
+[2024-03-20T12:45:53.064+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag/run_id=manual__2024-03-20T12:45:46.848876+00:00/task_id=choose_best_model permission to 509
+[2024-03-20T12:45:53.066+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag/run_id=manual__2024-03-20T12:45:46.848876+00:00 permission to 509
+[2024-03-20T12:45:53.067+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag permission to 509
+[2024-03-20T12:45:53.068+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-03-20T12:45:53.096+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag/run_id=manual__2024-03-20T12:45:46.848876+00:00/task_id=choose_best_model permission to 509
+[2024-03-20T12:45:53.098+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag/run_id=manual__2024-03-20T12:45:46.848876+00:00 permission to 509
+[2024-03-20T12:45:53.100+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag permission to 509
+[2024-03-20T12:45:53.101+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-03-20T12:45:53.131+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_dag.choose_best_model manual__2024-03-20T12:45:46.848876+00:00 [queued]>
+[2024-03-20T12:45:53.138+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_dag.choose_best_model manual__2024-03-20T12:45:46.848876+00:00 [queued]>
+[2024-03-20T12:45:53.139+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-20T12:45:53.152+0000] {taskinstance.py:2217} INFO - Executing <Task(BranchPythonOperator): choose_best_model> on 2024-03-20 12:45:46.848876+00:00
+[2024-03-20T12:45:53.159+0000] {standard_task_runner.py:60} INFO - Started process 1066 to run task
+[2024-03-20T12:45:53.163+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'choose_best_model', 'manual__2024-03-20T12:45:46.848876+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/myfirst_dag.py', '--cfg-path', '/tmp/tmpg42t0voa']
+[2024-03-20T12:45:53.167+0000] {standard_task_runner.py:88} INFO - Job 22: Subtask choose_best_model
+[2024-03-20T12:45:53.210+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag/run_id=manual__2024-03-20T12:45:46.848876+00:00/task_id=choose_best_model permission to 509
+[2024-03-20T12:45:53.212+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag/run_id=manual__2024-03-20T12:45:46.848876+00:00 permission to 509
+[2024-03-20T12:45:53.215+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=my_dag permission to 509
+[2024-03-20T12:45:53.216+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-03-20T12:45:53.218+0000] {task_command.py:423} INFO - Running <TaskInstance: my_dag.choose_best_model manual__2024-03-20T12:45:46.848876+00:00 [running]> on host bb51432bb76d
+[2024-03-20T12:45:53.314+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_dag' AIRFLOW_CTX_TASK_ID='choose_best_model' AIRFLOW_CTX_EXECUTION_DATE='2024-03-20T12:45:46.848876+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-20T12:45:46.848876+00:00'
+[2024-03-20T12:45:53.327+0000] {python.py:202} INFO - Done. Returned value was: inaccurate
+[2024-03-20T12:45:53.327+0000] {branch.py:35} INFO - Branch into inaccurate
+[2024-03-20T12:45:53.328+0000] {skipmixin.py:178} INFO - Following branch inaccurate
+[2024-03-20T12:45:53.345+0000] {skipmixin.py:244} INFO - Skipping tasks [('accurate', -1)]
+[2024-03-20T12:45:53.398+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=choose_best_model, execution_date=20240320T124546, start_date=20240320T124553, end_date=20240320T124553
+[2024-03-20T12:45:53.457+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-20T12:45:53.488+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
